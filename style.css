@@ -9,6 +9,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
     /* padding: 0 5rem; */
 }
 /* shered styles */
@@ -88,14 +89,17 @@ header img{
 }
 .hero-img{
     width: 100%;
+    overflow-x: hidden;
 }
 
 main{
     margin-top: 8.5rem;
+    overflow-x: hidden;
 }
 .teams{
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 .teams .team-img-container{
     display: grid;
@@ -129,6 +133,7 @@ main{
 .teams{
     padding: 0 7rem;
     margin-bottom: 8rem;
+    overflow-x: hidden;
 }
 .teams p{
     color: #727272;
@@ -141,6 +146,7 @@ main{
     position: relative;
     overflow: hidden;
     padding: 0 8rem;
+    overflow-x: hidden;
 }
 /* .another-features .lekha{
     width: 30rem;
@@ -185,6 +191,7 @@ main{
     margin-bottom: 1.5rem;
     border-left: 5px solid #FF900E;
     padding-left: 1rem;
+    overflow-x: hidden;
 }
 .featured-box-head p{
     font-size: 1rem;
@@ -210,6 +217,8 @@ main{
 }
 .some-facts{
    padding: 0 8rem;
+   overflow-x: hidden;
+   margin-bottom: 11rem;
 }
 .some-facts .fact-lekha h2{
     font-size: 2.813rem;
@@ -256,7 +265,54 @@ main{
     transform: translateX(50%);
    
 }
-
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 0 6rem;
+    margin-bottom: 8rem;
+}
+.sponsors h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #131313;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.sponsors p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.sp-pic-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);  
+     
+}
+.sp-pic-container img{
+   
+    height: 3rem;
+}
+footer{
+    background: #FFF4E7;
+    height: 6.25rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+footer p{
+    font-size: 1.25rem;
+    color: #424242;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    margin-top: 2.4rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 /* for mobile */
 @media screen and (max-width: 576px){
     nav, nav ul{
@@ -269,7 +325,7 @@ main{
         display: flex;
         flex-direction: column-reverse;
         padding: 0 2rem;
-        
+        overflow-x: hidden;
         width: 100%;
     }
 
@@ -280,18 +336,50 @@ main{
         margin-top: 1.5rem;
         padding: 0;
         margin-top: 2rem;
+        overflow-x: hidden;
     }
     .another-features{
         display: flex;
         flex-direction: column;
         padding: 0 1rem;
         margin: 0;
+        overflow-x: hidden;
         /* overflow-x: scroll; */
     }
     .magic2{
         bottom: 4%;
+        overflow-x: hidden;
     }
     .featured-box-head{
         width: 26rem;
     }
+    .fact-card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .white{
+        margin-top: 2rem;
+    }
+    .some-facts{
+        padding: 1rem 5rem;
+        margin: 0;
+        overflow-x: hidden;
+     }
+     .sp-pic-container{
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2.5rem;
+        margin-left: 27%;
+        margin-top: -3rem;
+        width: 1rem;
+     }
+     .sponsors{
+        padding: 0 3rem;
+     }
+     footer{
+        height: 8.5rem;
+        
+     }
+     
 }
