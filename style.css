@@ -4,12 +4,148 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
+    
 }
 html, body{
     height: 100%;
     width: 100%;
+    /* padding: 0 5rem; */
 }
 /* shered styles */
 .primary-btn{
-    width: 131px;
+    width: 11.25rem;
+    height: 3.4rem;
+    background: #FF900E;
+    color: #ffffff;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.primary-btn:hover{
+    background: #8d510c;
+    cursor: pointer;
+}
+/* nav styles */
+header{
+    background: rgba(255, 144, 14, 0.1);
+    overflow-x: hidden;
+}
+nav, .hero{
+    max-width: 68rem;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* padding: 0 5rem; */
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    margin-left: 2.7rem;
+}
+nav a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.2rem;
+    font-weight: 500;  
+}
+nav h2{
+    color: #131313;
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* rest of header styles */
+header .hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 49.875rem;
+    margin: 4.5rem auto 1rem auto;
+    text-align: center;
+}
+header .hero-content h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #131313;
+}
+header .hero-content p{
+    color: rgb(56, 55, 55);
+    margin-top: 1rem;
+}
+ header .hero-content button{
+    margin: 2rem auto;
+
+} 
+header img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.hero-img{
+    width: 100%;
+}
+
+main{
+    margin-top: 8.5rem;
+}
+.teams{
+    display: flex;
+    width: 100%;
+}
+.teams .team-img-container{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 20.125rem);
+    grid-template-rows: repeat(2, 20.125rem);
+    margin-right: 4rem; 
+}
+.teams .features{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    /* width: 33.563rem; */
+    justify-content: center;
+    margin: 0 auto;
+}
+.features h2{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.teams .span1{
+    color: #727272;
+}
+.teams .span2{
+    color: #131313;
+}
+.teams .span3{
+    color: #FF900E;
+}
+.teams{
+    padding: 0 7rem;
+    margin-bottom: 8rem;
+}
+.teams p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* for mobile */
+@media screen and (max-width: 576px){
+    nav, nav ul{
+        flex-direction: column;
+    }
+    nav ul{
+        display: none;
+    }
+    .teams{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
